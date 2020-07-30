@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5zc-HC-Ipt">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Set Game View Controller-->
+        <scene sceneID="9GD-ic-rGq">
+            <objects>
+                <viewController id="jP6-Bw-iUe" customClass="newSetGameViewController" customModule="set_view_new" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="orM-BA-hcV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ut-Nv-IYt">
+                                <rect key="frame" x="142" y="407" width="130" height="136"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="IlW-6i-My6"/>
+                                    <constraint firstAttribute="height" constant="136" id="pYz-34-sVb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="new game"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="BNb-cs-F1M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Ut-Nv-IYt" firstAttribute="top" relation="lessThanOrEqual" secondItem="c4j-Zh-8eB" secondAttribute="top" constant="319" id="6B5-Sa-Xi0"/>
+                            <constraint firstItem="7Ut-Nv-IYt" firstAttribute="centerX" secondItem="c4j-Zh-8eB" secondAttribute="centerX" id="GLs-zK-8VA"/>
+                            <constraint firstItem="7Ut-Nv-IYt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="c4j-Zh-8eB" secondAttribute="leading" id="P7D-X3-YSl"/>
+                            <constraint firstItem="c4j-Zh-8eB" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="7Ut-Nv-IYt" secondAttribute="bottom" constant="319" id="WcP-by-Lhf"/>
+                            <constraint firstItem="c4j-Zh-8eB" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7Ut-Nv-IYt" secondAttribute="trailing" id="rUt-bQ-hFA"/>
+                            <constraint firstItem="7Ut-Nv-IYt" firstAttribute="centerY" secondItem="c4j-Zh-8eB" secondAttribute="centerY" id="zBM-Pt-FHJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c4j-Zh-8eB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="N2M-9t-DTn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iuk-wf-wqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321.73913043478262" y="122.54464285714285"/>
+        </scene>
+        <!--Set View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="setViewController" customModule="set_view_new" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Pnq-bg-mTX" customClass="setView" customModule="set_view_new" customModuleProvider="target">
+                                <rect key="frame" x="20" y="88" width="374" height="764"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pnq-bg-mTX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6h8-Dq-90Q"/>
+                            <constraint firstItem="Pnq-bg-mTX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Gtt-6g-M2e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pnq-bg-mTX" secondAttribute="trailing" constant="20" id="cyw-Lb-Jhb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pnq-bg-mTX" secondAttribute="bottom" constant="10" id="xR0-2e-dhx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="setGame" destination="Pnq-bg-mTX" id="Q8a-FS-u5p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-588" y="785"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="nlh-5h-Gm7">
+            <objects>
+                <splitViewController id="5zc-HC-Ipt" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="G5P-OK-PpU" kind="relationship" relationship="masterViewController" id="lKy-CO-TRw"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="detailViewController" id="6wC-Q5-xU9"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2Z-aQ-8CU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1419" y="126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Nhb-BV-BSO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G5P-OK-PpU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P2V-u9-nTu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jP6-Bw-iUe" kind="relationship" relationship="rootViewController" id="mN9-he-jhR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZW-SL-DuD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-588.40579710144937" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="BNb-cs-F1M"/>
+    </inferredMetricsTieBreakers>
+</document>
