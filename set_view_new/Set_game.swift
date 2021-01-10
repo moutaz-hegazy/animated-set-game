@@ -17,7 +17,7 @@ enum matchingState{
 
 //new comment
 // session git
-//new
+
 struct set{
     
     private(set) var cards = [card]()
