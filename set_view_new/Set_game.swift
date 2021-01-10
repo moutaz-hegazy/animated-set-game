@@ -15,6 +15,7 @@ enum matchingState{
     
 }
 
+//new comment
 struct set{
     
     private(set) var cards = [card]()
